@@ -3,54 +3,69 @@
 		<head>
 		<title>我的网页</title>
 		<link rel="stylesheet" href="./a.css">
+		<script src="//at.alicdn.com/t/font_710163_hv96u6eb1vq.js"></script>
+		<style type="text/css">
+			.icon {
+			   width: 1em; height: 1em;
+			   vertical-align: -0.15em;
+			   fill: currentColor;
+			   overflow: hidden;
+			}
+		</style>
 		</head>
 		<body >
-			<div class="topNavBar clearfix">
-				<a class="logo" href="#" alt="logo" style="float: left;">
-					<span class="rs">RS</span><span class="card">card</span>
-				</a>
-				<nav style="float: right;">
-					<ul class="clearfix">
-						<li >
-							<a herf="#">ABOUT</a>
-						</li>
-						<li>
-							<a herf="#">SKILLS</a>
-						</li>
-						<li>
-							<a herf="#">PORTFOLID</a>
-						</li>
-						<li>
-							<a herf="#">EXPERIENCE</a>
-						</li>
-						<li>
-							<a herf="#">PRICING</a>
-						</li>
-						<li>
-							<a herf="#">BLOG</a>
-						</li>
-						<li>
-							<a herf="#">CALENDAR</a>
-						</li>
-						<li>
-							<a herf="#">CONTACT</a>
-						</li>
-						<li>
-							<a herf="#">OTHER</a>
-						</li>
-					</ul>
-				</nav>
+			<div class="topNavBar">
+				<div class="topNavBar-inner clearfix">
+						<a class="logo" href="#" alt="logo" style="float: left;">
+								<span class="rs">RS</span><span class="card">card</span>
+						</a>
+							<nav style="float: right;">
+								<ul class="clearfix">
+									<li >
+										<a herf="#">ABOUT</a>
+									</li>
+									<li>
+										<a herf="#">SKILLS</a>
+									</li>
+									<li>
+										<a herf="#">PORTFOLID</a>
+									</li>
+									<li>
+										<a herf="#">EXPERIENCE</a>
+									</li>
+									<li>
+										<a herf="#">PRICING</a>
+									</li>
+									<li>
+										<a herf="#">BLOG</a>
+									</li>
+									<li>
+										<a herf="#">CALENDAR</a>
+									</li>
+									<li>
+										<a herf="#">CONTACT</a>
+									</li>
+									<li>
+										<a herf="#">OTHER</a>
+									</li>
+								</ul>
+							</nav>
+			
+				</div>
 			</div>
-			<div class="banner" style="background-image:url(#)"></div>
+			<div class="banner" >
+				<div class="mask"></div>
+			</div>
 			<main>
-				<div class="card">
-					<div class="pictureAndText">
+				<div class="userCard">
+					<div class="pictureAndText clearfix">
 						<div class="picture">
-							<img src="" alt="头像">
+							<img src="./image/avatar.jpg" alt="头像">
 						</div>
 						<div class="text">
-							<div class ="summary">
-								<span class="welcome">Hello</span>
+								<span class="welcome">Hello
+								<span class="triangle"></span>
+								</span>
 								<h1>陈哲</h1>
 								<p>前端开发工程师</p>
 								<hr>
@@ -64,16 +79,34 @@
 									<dt>手机</dt>
 									<dd>12345678901</dd>
 								</dl>
-							</div>
 						</div>
 					</div>
 						<footer class="media">
-							<a href="#"><image src="#" alt="..."></a>
-							<a href="#"><image src="#" alt="..."></a>
-							<a href="#"><image src="#" alt="..."></a>
-							<a href="#"><image src="#" alt="..."></a>
-							<a href="#"><image src="#" alt="..."></a>
-							<a href="#"><image src="#" alt="..."></a>
+							<a href="#">
+									<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-github"></use>
+										</svg>
+							</a>
+							<a href="#">
+									<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-qq-copy"></use>
+										</svg>
+							</a>
+							<a href="#">
+									<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixin"></use>
+										</svg>
+							</a>
+							<a href="#">
+									<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weibo"></use>
+										</svg>
+							</a>
+							<a href="#">
+									<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-taobao-circle-fill"></use>
+										</svg>
+							</a>
 						</footer>
 				</div>
 
