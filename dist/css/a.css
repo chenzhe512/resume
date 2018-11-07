@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
   transition: all 0.5s; }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .topNavBar {
   padding-top: 20px;
   padding-bottom: 12px;
@@ -302,58 +309,14 @@ section.skills.offset .progress {
 
 section.Portfolio {
   text-align: center;
-  margin-bottom: 300px; }
+  margin-bottom: 100px; }
 
-section.Portfolio > nav {
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 32px; }
+section.Portfolio h2 {
+  margin-bottom: 32px; }
 
-section.Portfolio > nav > ol {
-  margin: 0 auto;
-  display: inline-block;
-  vertical-align: top; }
-
-section.Portfolio > nav > ol > li {
-  float: left;
-  margin-left: 40px;
-  cursor: pointer; }
-
-section.Portfolio > nav > ol > li:nth-child(1) {
-  margin-left: 0; }
-
-section.Portfolio > nav .Bar {
-  height: 5px;
-  background: white;
-  margin-top: 5px;
-  margin-bottom: 30px;
-  border-radius: 2px; }
-
-section.Portfolio > nav .Bar-inner {
-  height: 100%;
-  background: #e6686a;
-  border-radius: 2px;
-  transition: all 0.3s; }
-
-section.Portfolio > nav .Bar.state-1 .Bar-inner {
-  margin-left: 0;
-  width: 50px; }
-
-section.Portfolio > nav .Bar.state-2 .Bar-inner {
-  margin-left: 72px;
-  width: 50px; }
-
-section.Portfolio > nav .Bar.state-3 .Bar-inner {
-  margin-left: 140px;
-  width: 50px; }
-
-section.Portfolio .jobs {
-  position: relative; }
-
-section.Portfolio .jobs > .big,
-section.Portfolio .jobs > .small {
-  position: absolute; }
+section.Portfolio .swiper-container {
+  width: 668px;
+  height: 500px; }
 
 section.message > ol {
   max-width: 700px;
