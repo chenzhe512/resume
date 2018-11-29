@@ -20,9 +20,7 @@
         scrollToElement: function scrollToElement(element) {
             var top = element.offsetTop;
             var currentTop = window.scrollY;
-            var targetTop = top - 80;
-            //console.log(currentTop)
-            //console.log(targetTop)
+            var targetTop = top - 120;
             var s = targetTop - currentTop;
             var coords = { y: currentTop };
             var t = Math.abs(s / 100 * 300);
@@ -36,7 +34,7 @@
         bindEvents: function bindEvents() {
             var _this = this;
 
-            var aTags = this.view.querySelectorAll('nav.menu > ul > li > a');
+            var aTags = this.view.querySelectorAll('nav.menu > ul > li > a[href^="#"]');
             for (var i = 0; i < aTags.length; i++) {
                 aTags[i].onclick = function (x) {
                     x.preventDefault();

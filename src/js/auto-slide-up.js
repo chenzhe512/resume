@@ -19,11 +19,13 @@
                 minIndex = i
             }
         }
+
         specialTags[minIndex].classList.remove('offset')
-        for (let i = 0; i < specialTags.length; i++) {
+
+        /*for (let i = 0; i < specialTags.length; i++) {
             specialTags[i].classList.remove('active')
         }
-        specialTags[minIndex].classList.add('active')
+        specialTags[minIndex].classList.add('active')*/
     
         let id = specialTags[minIndex].id
         let a = document.querySelector('a[href="#' + id + '"]')
@@ -35,24 +37,24 @@
         li.classList.add('highlight')
     }
     
-    let liTags = document.querySelectorAll('nav.menu > ul > li')
+    /*let liTags = document.querySelectorAll('nav.menu > ul > li')
             for (let i = 0; i < liTags.length; i++) {
                 liTags[i].onmouseenter = function (x) {
                     x.currentTarget.classList.add('active')
-                    /*let li = x.currentTarget
+                    let li = x.currentTarget
                     let brother = li.getElementsByTagName('ul')[0]
-                    /*while(brother.nodeType === 3){ while(brother.tagName !== 'UL'){
+                    while(brother.nodeType === 3){ while(brother.tagName !== 'UL'){
                         brother = brother.nextSibling
-                    }*/
-                    /*brother.classList.add('active')*/
+                    }
+                    brother.classList.add('active')
                 }
                 liTags[i].onmouseleave = function (x) {
-                    /*let li = x.currentTarget
+                    let li = x.currentTarget
                     let brother = li.getElementsByTagName('ul')[0]
-                    brother.classList.remove('active')*/
+                    brother.classList.remove('active')
                     x.currentTarget.classList.remove('active')
                 }
-            }
+            }*/
 }.call()
 
 

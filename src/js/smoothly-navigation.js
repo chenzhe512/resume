@@ -19,9 +19,7 @@
         scrollToElement: function(element){
             let top = element.offsetTop
             let currentTop = window.scrollY
-            let targetTop = top - 80
-            //console.log(currentTop)
-            //console.log(targetTop)
+            let targetTop = top - 120
             let s = targetTop - currentTop
             var coords = { y: currentTop };
             var t = Math.abs((s / 100) * 300)
@@ -39,7 +37,7 @@
 
         },
         bindEvents: function(){
-            let aTags = this.view.querySelectorAll('nav.menu > ul > li > a')
+            let aTags = this.view.querySelectorAll('nav.menu > ul > li > a[href^="#"]')
             for (let i = 0; i < aTags.length; i++) {
                 aTags[i].onclick = (x) => {
                     x.preventDefault()

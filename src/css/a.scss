@@ -3,7 +3,6 @@ body{
     margin: 0;
 }
 
-
 a{
     color: inherit;
     text-decoration: none;
@@ -64,6 +63,9 @@ h1,h2,h3,h4,h5,h6{
 .topNavBar-inner{
     padding-left: 16px;
     padding-right: 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .topNavBar{
     nav{ padding-top: 4px; padding-bottom: 4px;
@@ -77,15 +79,13 @@ h1,h2,h3,h4,h5,h6{
 
 .topNavBar nav > ul > li.active > a::after,
 .topNavBar nav > ul > li.highlight > a::after{
-
     content: '';
-    
     display: block;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: #e6686a;
+    background: #045550;
     height: 3px;
     animation: menuSlide 0.3s;
 }
@@ -130,14 +130,14 @@ h1,h2,h3,h4,h5,h6{
 }
 .topNavBar .logo .rs{
     margin-right: 4px;
-    color: #e6686a
+    color: #045550
 }
 .topNavBar .logo .card{
     color: #9a9da2
 }
 .banner{
     height: 515px;
-    background-image: url(../image/bgi.jpg); 
+    background-image: url(../image/bgi.png); 
     background-size: cover;
 }
 .banner .mask{
@@ -152,7 +152,7 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
 }
 .userCard .welcome{
-    background: #e6686a;
+    background: #045550;
     color: white;
     display: inline-block;
     /*width: 70px;
@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     border: 10px solid transparent;
     width: 0px;
-    border-left-color: #e6686a;
+    border-left-color: #045550;
     border-top-width: 0px; 
     position: absolute;
     left: 8px;
@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6{
     color: #9da0a7;
 }
 .userCard > footer.media{
-    background: #e6686a;
+    background: #045550;
     text-align: center;
 }
 .userCard > footer.media > a{
@@ -216,10 +216,20 @@ h1,h2,h3,h4,h5,h6{
     padding: 5px 0;
     border-radius: 50%;
     margin: 16px;
+    transition: all .3s; 
+    position: relative;
 }
 .userCard > footer.media > a:hover{
     background: #cf5d5f;
 }
+.userCard > footer.media a span {visibility: hidden; opacity: 0; position: absolute; padding: 3px 8px; border-radius: 3px;
+    background-color: #efefef; white-space: nowrap; bottom: 120%; left: 50%; transform: translateX(-50%); font-size: 12px;
+    transition: all .3s;
+  }
+  .userCard > footer.media a span img { vertical-align: top; margin: 0px -5px;}
+  .userCard > footer.media a span::after {content: ''; position: absolute; border-width: 6px; border-color: #efefef transparent transparent;
+   border-style: solid; left: 50%; transform: translateX(-50%); top: 100%;}
+  .userCard > footer.media a:hover span { visibility: visible; opacity: 1;}
     .userCard svg{
     width: 30px;
     height: 30px;
@@ -258,75 +268,155 @@ body > main .downloadResume:hover{
 }
 section.skills,
 section.Portfolio{
-    max-width: 940px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
 section.skills > h2,
 section.Portfolio > h2,
-section.message > h2{
+section.messageBoard > h2{
     text-align: center;
     color: #3d4451;
     font-size: 34px;
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 section.skills > ol{
-    background: #ffffff;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+
     padding: 42px 50px 10px;
-    margin-top: 30px;
-}
-section.skills > ol > li{
-    float: left;
-    width: 47%;
-    box-sizing: border-box;
-}
-section.skills > ol >li:nth-child(even){
-    float: right;
-}
-section.skills .progressBar{
-    height: 5px;
-    background: #fae1e1;
-    border-radius: 2px;
-    margin: 4px 0 40px;
-    overflow: hidden;
-}
-section.skills .progressBar .progress{
-    height: 100%;
-    background: #e6686a;
-    width: 70%;
-    transform: translateX(0);
-    transition: all 1s;
-}
-section.skills.offset .progress{
-    transform: translateX(100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     li{
+        border: 2px solid #fff;
+        width: 45%;
+        padding: 10px 10px;
+        margin: 10px;
+        background: #fff;
+        border-radius: 5px;
+        h3{
+            font-weight: bold;
+        }
+        p{
+            line-height: 2;
+        }
+
+    }
+    li:hover{
+        border: 2px solid #3d4451;
+        transition: all 1s;
+        cursor: default;
+    }
 }
 section.Portfolio{
+    max-width: 1200px;
     text-align: center;
     margin-bottom: 100px;
-}
-section.Portfolio h2{
-    margin-bottom: 32px;
+    h2{
+        margin-bottom: 32px;
+        }
+    .works{
+        > ol{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex: 1;
+            > li{
+                width: 30%;
+                margin: 20px 10px;
+                background: #fff;
+                border-radius: 5px;
+                overflow: hidden;
+                > a > img{
+                    width: 100%;
+                }
+                > a > .workIntroduction{
+                    > h3{
+                        padding: 20px;
+                        text-align: left;
+                    }
+                    > p{
+                        padding-bottom: 20px;
+                        padding-left: 20px;
+                        text-align: left;
+                    }
+                }
+
+            }
+            li:hover{
+                box-shadow: 0 0 15px 3px #aaa; 
+                transform: translateY(-6px);
+                transition: all 0.5s;
+            }
+
+        }
+    }
 }
 
-section.Portfolio .swiper-container {
-    width: 668px;
-    height: 500px;
-}
 
-section.message > ol{
+section.messageBoard > ol{
     max-width: 700px;
     margin: 0 auto;
-    border-top: 1px solid #ddd;
+    background: white;
+    > li{
+        padding: 16px 16px;
+        font-size: 18px;
+    }
+    > li:nth-child(2n){
+        background: #e9e9e9;
+    }
 }
-section.message > ol > li{
-    padding: 16px 16px;
-    border-bottom: 1px solid #ddd;
-}
-section.message > form{
+section.messageBoard > form{
     padding: 50px;
     width: 700px;
     margin: 0 auto;
+    > .form-content > p{
+        font-size: 20px;
+        font-weight: bold;
+        > textarea{
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 7px 10px;
+            margin: 20px 0;
+            font-size: 20px;
+            line-height: 20px;
+    
+        }
+    }
+    > .form-name > p{
+        font-size: 20px;
+        font-weight: bold;
+        > input[type=text]{
+            margin: 20px 0;
+            border: none;
+            width: 270px;
+            font-size: 20px;
+            padding: 7px 10px;
+        }
+        > input[type=submit]{
+            font-size: 14px;
+            padding: 8px 24px;
+            background-color: #045550;
+            border-radius: 25px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition: all .3s;
+            margin-left: 30px;
+        }
+        > input[type=submit]:hover{
+            box-shadow: 0px 0px 13px 0px rgba(4,85,80,1);
+
+        }
+    }
+    
+
 }
+footer.footer { padding: 20px 0; 
+                text-align: center; 
+                color: #333; 
+                font-size: 14px;}

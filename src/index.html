@@ -2,15 +2,10 @@
 <html>
 
 <head>
-	<title>我的网页</title>
+	<title>个人在线简历</title>
 	<link rel="stylesheet" href="./css/a.css">
-	<link rel="stylesheet" href="../loading.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
-	<script src="//at.alicdn.com/t/font_710163_hv96u6eb1vq.js"></script>
-
-	
+	<script src="//at.alicdn.com/t/font_710163_vtecsc2nr29.js"></script>
 </head>
-
 <body>
 	<div id="siteWelcome" class="site-welcome active">
 		<div class="loading"></div>
@@ -18,47 +13,25 @@
 	<div id='topNavBar' class="topNavBar">
 		<div class="topNavBar-inner clearfix">
 			<a class="logo" href="#" alt="logo" style="float: left;">
-				<span class="rs">RS</span>
-				<span class="card">card</span>
+				<span class="rs">C</span>
+				<span class="card">Z</span>
 			</a>
-			<nav class="menu" style="float: right;">
+			<nav class="menu">
 				<ul class="clearfix">
 					<li>
-						<a href="#siteAbout">ABOUT</a>
+						<a href="#siteAbout">关于</a>
 					</li>
 					<li>
-						<a href="#siteSkills">SKILLS</a>
-					</li>
-					<li class="menuTigger">
-						<a href="#siteWorks">PORTFOLID</a>
-						<ul class="submenu">
-							<li>作品1</li>
-							<li>作品2</li>
-							<li>作品3</li>
-						</ul>
-					</li>
-					<li class="menuTigger">
-						<a href="#">EXPERIENCE</a>
-						<ul class="submenu">
-							<li>经验1</li>
-							<li>经验2</li>
-							<li>经验3</li>
-						</ul>
+						<a href="#siteSkills">技能</a>
 					</li>
 					<li>
-						<a href="#">PRICING</a>
+						<a href="#siteWorks">作品</a>
 					</li>
 					<li>
-						<a href="#">BLOG</a>
+						<a href="#messageBoard">留言</a>
 					</li>
 					<li>
-						<a href="#">CALENDAR</a>
-					</li>
-					<li>
-						<a href="#">CONTACT</a>
-					</li>
-					<li>
-						<a href="#">OTHER</a>
+						<a href="https://chenzhe512.github.io" target="_blank">个人博客</a>
 					</li>
 				</ul>
 			</nav>
@@ -95,35 +68,40 @@
 				</div>
 			</div>
 			<footer class="media">
-				<a href="#">
+				<a href="https://github.com/chenzhe512" target="_blank">
 					<svg class="icon" aria-hidden="true">
 						<use xlink:href="#icon-github"></use>
 					</svg>
+					<span>Github</span>
 				</a>
-				<a href="#">
-					<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-qq-copy"></use>
+				<a href="mailto:chenzhe512@gmail.com">
+					<svg class="icon" aria-hidden="true" target="_blank">
+						<use xlink:href="#icon-email"></use>
 					</svg>
+					<span>邮件</span>
 				</a>
-				<a href="#">
+				<a href="https://www.zhihu.com/people/zhe-ge-wang-ye-da-bu-kai" target="_blank">
+					<svg class="icon" aria-hidden="true" target="_blank">
+						<use xlink:href="#icon-zhihu"></use>
+					</svg>
+					<span>知乎</span>
+				</a>
+				<a href="javascript:;">
 					<svg class="icon" aria-hidden="true">
 						<use xlink:href="#icon-weixin"></use>
 					</svg>
+					<span><img src="./image/wechat.png" alt="wechat" width="120px;" height="120px;"></span>
 				</a>
-				<a href="#">
+				<a href="javascript:;">
 					<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-weibo"></use>
+						<use xlink:href="#icon-qq-copy"></use>
 					</svg>
-				</a>
-				<a href="#">
-					<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-taobao-circle-fill"></use>
-					</svg>
+					<span><img src="./image/qq.png" alt="wechat" width="120px;" height="120px;"></span>
 				</a>
 			</footer>
 		</div>
 		<p class="downloadResume-wrapper">
-			<a class="downloadResume" href="./chenzhe.txt" target="_blank" download>下载PDF简历</a>
+			<a class="downloadResume" href="../chenzhe.txt" target="_blank" download>下载PDF简历</a>
 
 		</p>
 
@@ -134,98 +112,131 @@
 	</main>
 	<section data-x class="skills" id="siteSkills">
 		<h2>技能</h2>
-		<ol class="clearfix">
+		<ol>
 			<li>
-				<h3>HTML 5 & CSS</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 40%"></div>
-				</div>
+				<h3>Vue</h3>
+				<p>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等</p>
 			</li>
 			<li>
-				<h3>Javascript</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 60%"></div>
-				</div>
+				<h3>移动端页面</h3>
+				<p>会使用 REM、vw/vh等技术制作适配手机设备的页面</p>
 			</li>
 			<li>
 				<h3>jQuery</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 67%"></div>
+				<p>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等。</p>
 				</div>
 			</li>
 			<li>
-				<h3>Vue</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 55%"></div>
-				</div>
+				<h3>HTML 5 & CSS</h3>
+				<p>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术。</p>
 			</li>
 			<li>
 				<h3>HTTP</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 44%"></div>
-				</div>
+				<p>理解 HTTP 网络协议，熟悉常见状态码</p>
 			</li>
 			<li>
-				<h3>CSS</h3>
-				<div class="progressBar">
-					<div class="progress" style="width: 77%"></div>
-				</div>
+				<h3>前端框架</h3>
+				<p>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue</p>
 			</li>
-
 		</ol>
 	</section>
 	<section data-x class="Portfolio" id="siteWorks">
 		<h2>作品集</h2>
-		<!--这就是view，用户看的到的东西-->
-		<div id="mySlides">
-			<div class="swiper-container">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<img src="./works/canvas.jpg" class="swiper-slide">
-					<img src="./works/nav-demo.jpg" class="swiper-slide">
-					<img src="./works/slide.jpg" class="swiper-slide">
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-	
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
+		<div class="works">
+			<ol>			
+				<li>
+					<a href="https://github.com/chenzhe512/nav-demo" target="_blank">
+						<img src="./image/nav-demo.png" alt="" >
+						<div class="workIntroduction">
+								<h3>自定义导航</h3>
+								<p>关键词：Js</p>
+							</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/chenzhe512/canvas" target="_blank">
+						<img src="./image/canvas.png" alt="">
+						<div class="workIntroduction">
+								<h3>Canvas画板</h3>
+								<p>关键词：Js、Canvas</p>
+							</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/chenzhe512/demo-vue-blog" target="_blank">
+						<img src="./image/blog.png" alt="">
+						<div class="workIntroduction">
+								<h3>Vue实现多人共享博客</h3>
+								<p>关键词：Vue、Vue-router、Vuex、ES6、Axios</p>
+							</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/chenzhe512/demo-pikaqiu" target="_blank">
+						<img src="./image/pikaqiu.png" alt="">
+						<div class="workIntroduction">
+							<h3>皮卡丘</h3>
+							<p>关键词：Jquery、Js</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/chenzhe512/slides-4-demo" target="_blank">
+						<img src="./image/slide.png" alt="">
+						<div class="workIntroduction">
+							<h3>轮播</h3>
+							<p>关键词：Jquery、Js</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/chenzhe512/resume" target="_blank">
+						<img src="./image/resume.png" alt="">
+						<div class="workIntroduction">
+							<h3>个人在线简历</h3>
+							<p>关键词：Js</p>
+						</div>
+					</a>
+				</li>
+			</ol>
 		</div>
 
 
 	</section>
-	<section class="message">
+	<section data-x class="messageBoard" id="messageBoard">
 		<h2>留言</h2>
 		<ol id='messageList'>
 		</ol>
 		<form id='leaveMessageForm'>
-			<label>
-				<span>姓名</span>
-			</label>
-			<input type="text" name="name">
-			<label>
-				<span>留言</span>
-			</label>
-			<input type="text" name="content">
-			<input type="submit" value="提交">
+			<div class="form-content">
+				<p>
+					<label for="content">你的留言：</label>
+					<span id="message-verification-prompt"></span>
+				</p>
+				<p>
+					<textarea name="content" id="content" cols="30" rows="10" ></textarea>
+				</p>
+			</div>
+			<div class="form-name">
+				<p>
+					<label for="name">你的姓名：</label>
+					<span id="name-verification-prompt"></span>
+				</p>
+				<p>
+					<input type="text" id="name" name="name" autocomplete="off">
+					<input type="submit" value="发布" class="submit">
+
+				</p>
+			</div>
 		</form>
 	</section>
+	<footer class="footer">积木·2018</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
-	<script src="./js/message.js"></script>
-	<script src="./js/init-swiper.js"></script>
 	<script src="./js/auto-slide-up.js"></script>
 	<script src="./js/sticky-topbar.js"></script>
 	<script src="./js/smoothly-navigation.js"></script>
-	<script>
-		setTimeout(function () {
-			siteWelcome.classList.remove('active')
-		}, 100)
-	</script>
+	<script src="./js/message.js"></script>
 </body>
 
 </html>

@@ -21,38 +21,40 @@
                 minIndex = _i;
             }
         }
+
         specialTags[minIndex].classList.remove('offset');
-        for (var _i2 = 0; _i2 < specialTags.length; _i2++) {
-            specialTags[_i2].classList.remove('active');
+
+        /*for (let i = 0; i < specialTags.length; i++) {
+            specialTags[i].classList.remove('active')
         }
-        specialTags[minIndex].classList.add('active');
+        specialTags[minIndex].classList.add('active')*/
 
         var id = specialTags[minIndex].id;
         var a = document.querySelector('a[href="#' + id + '"]');
         var li = a.parentNode;
         var brotherAndMe = li.parentNode.children;
-        for (var _i3 = 0; _i3 < brotherAndMe.length; _i3++) {
-            brotherAndMe[_i3].classList.remove('highlight');
+        for (var _i2 = 0; _i2 < brotherAndMe.length; _i2++) {
+            brotherAndMe[_i2].classList.remove('highlight');
         }
         li.classList.add('highlight');
     }
 
-    var liTags = document.querySelectorAll('nav.menu > ul > li');
-    for (var _i4 = 0; _i4 < liTags.length; _i4++) {
-        liTags[_i4].onmouseenter = function (x) {
-            x.currentTarget.classList.add('active');
-            /*let li = x.currentTarget
-            let brother = li.getElementsByTagName('ul')[0]
-            /*while(brother.nodeType === 3){ while(brother.tagName !== 'UL'){
-                brother = brother.nextSibling
+    /*let liTags = document.querySelectorAll('nav.menu > ul > li')
+            for (let i = 0; i < liTags.length; i++) {
+                liTags[i].onmouseenter = function (x) {
+                    x.currentTarget.classList.add('active')
+                    let li = x.currentTarget
+                    let brother = li.getElementsByTagName('ul')[0]
+                    while(brother.nodeType === 3){ while(brother.tagName !== 'UL'){
+                        brother = brother.nextSibling
+                    }
+                    brother.classList.add('active')
+                }
+                liTags[i].onmouseleave = function (x) {
+                    let li = x.currentTarget
+                    let brother = li.getElementsByTagName('ul')[0]
+                    brother.classList.remove('active')
+                    x.currentTarget.classList.remove('active')
+                }
             }*/
-            /*brother.classList.add('active')*/
-        };
-        liTags[_i4].onmouseleave = function (x) {
-            /*let li = x.currentTarget
-            let brother = li.getElementsByTagName('ul')[0]
-            brother.classList.remove('active')*/
-            x.currentTarget.classList.remove('active');
-        };
-    }
 }.call();
